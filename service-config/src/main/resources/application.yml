@@ -7,6 +7,6 @@ spring:
         git:
           default-label: config-server
           uri: https://github.com/Hualmss/dharma-back
-          search-path: config-data
+          search-paths: config-data
   application:
     name: service-config
