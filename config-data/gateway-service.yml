@@ -1,0 +1,33 @@
+server:
+  port: 8081
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: book-service
+          uri: lb://book-service
+          predicate:
+            - Path=/book/**
+        - id: author-service
+          uri: lb://author-service
+          predicate:
+            - Path=/author/**
+        - id: genre-service
+          uri: lb://genre-service
+          predicate:
+            - Path=/genre/**
+        - id: store-service
+          uri: lb://store-service
+          predicate:
+            - Path=/store/**
