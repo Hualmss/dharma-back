@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Dharma-Back.iml" filepath="$PROJECT_DIR$/.idea/Dharma-Back.iml" />
       <module fileurl="file://$PROJECT_DIR$/author-service/author-service.iml" filepath="$PROJECT_DIR$/author-service/author-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/genre-service/genre-service.iml" filepath="$PROJECT_DIR$/genre-service/genre-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/store-service/store-service.iml" filepath="$PROJECT_DIR$/store-service/store-service.iml" />
     </modules>
