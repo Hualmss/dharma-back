@@ -4,21 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.8</version>
+		<version>2.7.11</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dharma.author</groupId>
-	<artifactId>author-service</artifactId>
+	<groupId>com.dharma.store</groupId>
+	<artifactId>store-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>author-service</name>
+	<name>store-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<start-class>com.dharma.author.AuthorServiceApplication</start-class>
 		<java.version>11</java.version>
-
-
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,13 +22,14 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
-	       		<groupId>org.springframework.cloud</groupId>
-	        	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+ 		        <groupId>org.springframework.cloud</groupId>
+		        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -54,8 +51,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
-		<dependency>
+
+			<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 
@@ -82,6 +79,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

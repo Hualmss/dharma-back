@@ -1,8 +1,6 @@
 spring:
   application:
-    name: author-service
-  config:
-    name: author-service
+    name: genre-service
   cloud:
     config:
       enabled: true

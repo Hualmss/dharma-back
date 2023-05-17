@@ -3,12 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Dharma-Back.iml" filepath="$PROJECT_DIR$/.idea/Dharma-Back.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-author/author-service.iml" filepath="$PROJECT_DIR$/service-author/author-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/author-service/author-service.iml" filepath="$PROJECT_DIR$/author-service/author-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-book/service-book.iml" filepath="$PROJECT_DIR$/service-book/service-book.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-config/service-config.iml" filepath="$PROJECT_DIR$/service-config/service-config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-genre/service-genre.iml" filepath="$PROJECT_DIR$/service-genre/service-genre.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-store/service-store.iml" filepath="$PROJECT_DIR$/service-store/service-store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genre-service/genre-service.iml" filepath="$PROJECT_DIR$/genre-service/genre-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/store-service/store-service.iml" filepath="$PROJECT_DIR$/store-service/store-service.iml" />
     </modules>
   </component>
 </project>
