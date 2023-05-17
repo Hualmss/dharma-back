@@ -8,16 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
-        <module name="service-author" />
         <module name="service-book" />
         <module name="service-config" />
         <module name="service-store" />
+        <module name="author-service" />
         <module name="service-genre" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="author-service" target="11" />
       <module name="eureka-service" target="17" />
-      <module name="service-author" target="11" />
       <module name="service-book" target="11" />
       <module name="service-config" target="11" />
       <module name="service-genre" target="11" />
@@ -26,8 +26,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="author-service" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
-      <module name="service-author" options="-parameters" />
       <module name="service-book" options="-parameters" />
       <module name="service-config" options="-parameters" />
       <module name="service-genre" options="-parameters" />

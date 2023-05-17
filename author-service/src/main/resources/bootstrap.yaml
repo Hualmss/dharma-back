@@ -1,6 +1,6 @@
 spring:
   application:
-    name: service-author
+    name: author-service
   cloud:
     config:
       enabled: true

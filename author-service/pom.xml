@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dharma.author</groupId>
-	<artifactId>service-author</artifactId>
+	<artifactId>author-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>service-author</name>
+	<name>author-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<start-class>com.dharma.author.ServiceAuthorApplication</start-class>
