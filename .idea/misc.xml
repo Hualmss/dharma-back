@@ -5,6 +5,14 @@
       <list>
         <option value="$PROJECT_DIR$/service-book/pom.xml" />
         <option value="$PROJECT_DIR$/service-author/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-service/pom.xml" />
+        <option value="$PROJECT_DIR$/service-config/pom.xml" />
+        <option value="$PROJECT_DIR$/service-genre/pom.xml" />
+        <option value="$PROJECT_DIR$/service-store/pom.xml" />
+        <option value="$PROJECT_DIR$/author-service/pom.xml" />
+        <option value="$PROJECT_DIR$/book-service/pom.xml" />
+        <option value="$PROJECT_DIR$/genre-service/pom.xml" />
+        <option value="$PROJECT_DIR$/store-service/pom.xml" />
       </list>
     </option>
   </component>
