@@ -17,17 +17,17 @@ spring:
       routes:
         - id: book-service
           uri: lb://book-service
-          predicate:
+          predicates:
             - Path=/book/**
         - id: author-service
           uri: lb://author-service
-          predicate:
+          predicates:
             - Path=/author/**
         - id: genre-service
           uri: lb://genre-service
-          predicate:
+          predicates:
             - Path=/genre/**
         - id: store-service
           uri: lb://store-service
-          predicate:
+          predicates:
             - Path=/store/**

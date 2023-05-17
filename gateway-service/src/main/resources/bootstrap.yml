@@ -1,8 +1,7 @@
 spring:
   application:
     name: gateway-service
-  config:
-    name: author-service
+
   cloud:
     config:
       enabled: true
