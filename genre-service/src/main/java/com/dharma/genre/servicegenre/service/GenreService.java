@@ -16,4 +16,6 @@ public interface GenreService  {
     public void deleteGenreById(long id);
 
     public void saveGenre(Genre genre);
+
+    public boolean ifGenreExistById(long id);
 }

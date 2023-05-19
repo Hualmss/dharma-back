@@ -40,5 +40,10 @@ public class StoreController {
         storeService.deleteStoreById(id);
     }
 
+    @GetMapping(value="/isPresent/{id}")
+    public boolean ifGenreExistById(@PathVariable long id){
+        return storeService.ifStoreExistById(id);
+    }
+
 }
 

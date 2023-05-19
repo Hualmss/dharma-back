@@ -16,4 +16,6 @@ public interface StoreService {
     public BookStore updateStore(long id, BookStore store);
 
     public void saveStore(BookStore store);
+
+    public boolean ifStoreExistById(long id);
 }

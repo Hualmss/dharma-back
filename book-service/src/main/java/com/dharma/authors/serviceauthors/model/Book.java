@@ -25,6 +25,10 @@ public class Book {
 
     private long authorId;
 
+    private long storeId;
+
+    private long genreId;
+
     @JsonFormat(pattern = "YYY-MM-dd")
     private Date purchaseDate;
 

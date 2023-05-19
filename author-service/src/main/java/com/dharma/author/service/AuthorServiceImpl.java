@@ -41,4 +41,9 @@ public class AuthorServiceImpl implements AuthorService {
     public void saveAuthor(Author author) {
         authorRepository.save(author);
     }
+
+    @Override
+    public boolean ifAuthorExistById(long id) {
+        return authorRepository.findById(id).isPresent();
+    }
 }

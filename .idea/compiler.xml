@@ -11,6 +11,7 @@
         <module name="config-service" />
         <module name="book-service" />
         <module name="genre-service" />
+        <module name="infoBook-service" />
         <module name="gateway-service" />
         <module name="store-service" />
         <module name="author-service" />
@@ -20,9 +21,10 @@
       <module name="author-service" target="11" />
       <module name="book-service" target="11" />
       <module name="config-service" target="11" />
-      <module name="eureka-service" target="17" />
+      <module name="eureka-service" target="11" />
       <module name="gateway-service" target="11" />
       <module name="genre-service" target="11" />
+      <module name="infoBook-service" target="11" />
       <module name="store-service" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -34,6 +36,7 @@
       <module name="eureka-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="genre-service" options="-parameters" />
+      <module name="infoBook-service" options="-parameters" />
       <module name="store-service" options="-parameters" />
     </option>
   </component>

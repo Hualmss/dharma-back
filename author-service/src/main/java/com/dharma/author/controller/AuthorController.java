@@ -37,8 +37,13 @@ public class AuthorController {
     }
 
     @PutMapping(value = "/{id}")
-    public void updateAuthor(@PathVariable long id , @RequestBody Author author){
-        authorService.updateAuthorById(id, author);
+    public Author updateAuthor(@PathVariable long id , @RequestBody Author author){
+        return authorService.updateAuthorById(id, author);
+    }
+
+    @GetMapping(value="/isPresent/{id}")
+    public boolean ifGenreExistById(@PathVariable long id){
+        return authorService.ifAuthorExistById(id);
     }
 
 }

@@ -1,7 +1,11 @@
 package com.dharma.authors.serviceauthors.Service;
 
+import com.dharma.authors.serviceauthors.FeignClients.AuthorFeignClient;
+import com.dharma.authors.serviceauthors.FeignClients.GenreFeignClient;
+import com.dharma.authors.serviceauthors.FeignClients.StoreFeignClient;
 import com.dharma.authors.serviceauthors.model.Book;
 import com.dharma.authors.serviceauthors.repository.BookRepository;
+import org.apache.catalina.Store;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +17,16 @@ public class BookServiceImpl implements BookService{
 
     @Autowired
     private BookRepository bookRepository;
+
+    @Autowired
+    private GenreFeignClient genreFeignClient;
+
+    @Autowired
+    private AuthorFeignClient authorFeignClient;
+
+    @Autowired
+    private StoreFeignClient storeFeignClient;
+
     @Override
     public Optional<Book> getBookById(long id) {
         return bookRepository.findById(id);
@@ -38,6 +52,43 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public void saveBook(Book book) {
-        bookRepository.save(book);
+        if(verifyNecessaryField(book))
+            bookRepository.save(book);
+
+    }
+
+    @Override
+    public List<Book> getBooksByAuthorId(long id) {
+        return bookRepository.findByAuthorId(id);
+    }
+
+    @Override
+    public List<Book> getBooksByGenreId(long id) {
+        return bookRepository.findByGenreId(id);
+    }
+
+    @Override
+    public List<Book> getBooksByStoreId(long id) {
+        return bookRepository.findByStoreId(id);
+    }
+
+
+    public boolean verifyNecessaryField(Book book){
+        return existAuthor(book.getAuthorId())&&existStore(book.getStoreId())&&existGenre(book.getGenreId());
+    }
+
+    public boolean existGenre(long id){
+        System.out.println("id: "+id);
+        return genreFeignClient.existGenre(id);
+    }
+
+    public boolean existStore(long id){
+        System.out.println("id: "+id);
+        return storeFeignClient.existStore(id);
+    }
+
+    public boolean existAuthor(long id){
+        System.out.println("id: "+id);
+        return authorFeignClient.existAuthor(id);
     }
 }

@@ -16,4 +16,6 @@ public interface AuthorService {
     public Author updateAuthorById(long id, Author author );
 
     public void saveAuthor(Author author);
+
+    public boolean ifAuthorExistById(long id);
 }

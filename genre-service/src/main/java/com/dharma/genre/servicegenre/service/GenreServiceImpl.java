@@ -41,4 +41,9 @@ public class GenreServiceImpl implements GenreService{
     public void saveGenre(Genre genre) {
         genreRepository.save(genre);
     }
+
+    @Override
+    public boolean ifGenreExistById(long id) {
+        return genreRepository.findById(id).isPresent();
+    }
 }

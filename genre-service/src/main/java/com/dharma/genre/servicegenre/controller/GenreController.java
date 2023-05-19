@@ -43,4 +43,10 @@ public class GenreController {
     public void deleteGenreById(@PathVariable long id){
         genreService.deleteGenreById(id);
     }
+
+
+    @GetMapping(value="/isPresent/{id}")
+    public boolean ifGenreExistById(@PathVariable long id){
+        return genreService.ifGenreExistById(id);
+    }
 }

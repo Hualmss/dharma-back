@@ -40,4 +40,9 @@ public class StoreServiceImpl implements  StoreService {
     public void saveStore(BookStore store) {
         storeRepository.save(store);
     }
+
+    @Override
+    public boolean ifStoreExistById(long id) {
+        return storeRepository.findById(id).isPresent();
+    }
 }
