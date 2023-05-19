@@ -1,6 +1,6 @@
 spring:
   application:
-    name: infoBook-service
+    name: info-book-service
   cloud:
     config:
       enabled: true

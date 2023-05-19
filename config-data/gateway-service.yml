@@ -19,8 +19,8 @@ spring:
           uri: lb://book-service
           predicates:
             - Path=/book/**
-        - id: infoBook-service
-          uri: lb://infoBook-service
+        - id: info-book-service
+          uri: lb://info-book-service
           predicates:
             - Path=/infoBook/author/**
             - Path=/infoBook/genre/**
