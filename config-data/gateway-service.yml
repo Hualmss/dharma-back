@@ -31,3 +31,7 @@ spring:
           uri: lb://store-service
           predicates:
             - Path=/store/**
+        - id: infoBook-service
+          uri: lb://infoBook-service
+          predicates:
+            - Path=/infoBook/**
