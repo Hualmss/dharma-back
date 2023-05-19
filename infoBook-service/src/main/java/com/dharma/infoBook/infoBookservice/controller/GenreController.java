@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/genre")
+@RequestMapping("/infoBook/genre")
 public class GenreController {
 
 
