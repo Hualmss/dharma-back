@@ -34,4 +34,6 @@ spring:
         - id: infoBook-service
           uri: lb://infoBook-service
           predicates:
-            - Path=/infoBook/**
+            - Path=/author/**
+            - Path=/genre/**
+            - Path=/store/**
