@@ -1,11 +1,10 @@
 package com.dharma.authors.serviceauthors.Service;
 
-import com.dharma.authors.serviceauthors.FeignClients.AuthorFeignClient;
-import com.dharma.authors.serviceauthors.FeignClients.GenreFeignClient;
-import com.dharma.authors.serviceauthors.FeignClients.StoreFeignClient;
+import com.dharma.authors.serviceauthors.CustomErrors.ResourceNotFound;
+
+import com.dharma.authors.serviceauthors.FeignClients.InfoBookFeignClient;
 import com.dharma.authors.serviceauthors.model.Book;
 import com.dharma.authors.serviceauthors.repository.BookRepository;
-import org.apache.catalina.Store;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,13 +18,8 @@ public class BookServiceImpl implements BookService{
     private BookRepository bookRepository;
 
     @Autowired
-    private GenreFeignClient genreFeignClient;
+    private InfoBookFeignClient infoBookFeignClient;
 
-    @Autowired
-    private AuthorFeignClient authorFeignClient;
-
-    @Autowired
-    private StoreFeignClient storeFeignClient;
 
     @Override
     public Optional<Book> getBookById(long id) {
@@ -39,6 +33,8 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public Optional<Book> updateBook(long id, Book book) {
+
+
         if(bookRepository.findById(id).isPresent())
             return Optional.of(bookRepository.save(book));
         else
@@ -54,7 +50,9 @@ public class BookServiceImpl implements BookService{
     public void saveBook(Book book) {
         if(verifyNecessaryField(book))
             bookRepository.save(book);
-
+        else{
+            throw new ResourceNotFound("author, store or genre field are incorrect or empty");
+        }
     }
 
     @Override
@@ -79,16 +77,16 @@ public class BookServiceImpl implements BookService{
 
     public boolean existGenre(long id){
         System.out.println("id: "+id);
-        return genreFeignClient.existGenre(id);
+        return infoBookFeignClient.existGenre(id);
     }
 
     public boolean existStore(long id){
         System.out.println("id: "+id);
-        return storeFeignClient.existStore(id);
+        return infoBookFeignClient.existStore(id);
     }
 
     public boolean existAuthor(long id){
         System.out.println("id: "+id);
-        return authorFeignClient.existAuthor(id);
+        return infoBookFeignClient.existAuthor(id);
     }
 }

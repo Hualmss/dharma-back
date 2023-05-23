@@ -34,10 +34,10 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public Author updateAuthorById(long id, Author author) {
+    public Optional<Author> updateAuthorById(long id, Author author) {
         if(authorRepository.findById(id).isPresent())
-            return authorRepository.save(author);
-        return null;
+            return Optional.of(authorRepository.save(author));
+        return Optional.empty();
     }
 
     @Override

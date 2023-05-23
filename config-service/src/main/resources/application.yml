@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: braker
+          default-label: master
           uri: https://github.com/Hualmss/dharma-back
           search-paths: config-data
   application:

@@ -1,0 +1,6 @@
+/home/hualmss/Documentos/PROYECTOS/Dharma-Back/author-service/src/main/java/com/dharma/author/ServiceAuthorApplication.java
+/home/hualmss/Documentos/PROYECTOS/Dharma-Back/author-service/src/main/java/com/dharma/author/service/AuthorService.java
+/home/hualmss/Documentos/PROYECTOS/Dharma-Back/author-service/src/main/java/com/dharma/author/model/Author.java
+/home/hualmss/Documentos/PROYECTOS/Dharma-Back/author-service/src/main/java/com/dharma/author/repository/AuthorRepository.java
+/home/hualmss/Documentos/PROYECTOS/Dharma-Back/author-service/src/main/java/com/dharma/author/controller/AuthorController.java
+/home/hualmss/Documentos/PROYECTOS/Dharma-Back/author-service/src/main/java/com/dharma/author/service/AuthorServiceImpl.java

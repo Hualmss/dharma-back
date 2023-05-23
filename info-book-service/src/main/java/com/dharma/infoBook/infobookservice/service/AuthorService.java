@@ -15,7 +15,7 @@ public interface AuthorService {
 
     public void deleteAuthorById(long id);
 
-    public Author updateAuthorById(long id, Author author );
+    public Optional<Author> updateAuthorById(long id, Author author );
 
     public void saveAuthor(Author author);
 

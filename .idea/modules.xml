@@ -3,15 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Dharma-Back.iml" filepath="$PROJECT_DIR$/.idea/Dharma-Back.iml" />
-      <module fileurl="file://$PROJECT_DIR$/author-service/author-service.iml" filepath="$PROJECT_DIR$/author-service/author-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dharma-client/dharma-client.iml" filepath="$PROJECT_DIR$/dharma-client/dharma-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/genre-service/genre-service.iml" filepath="$PROJECT_DIR$/genre-service/genre-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/infoBook-service/info-book-service.iml" filepath="$PROJECT_DIR$/infoBook-service/info-book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/info-book-service/info-book-service.iml" filepath="$PROJECT_DIR$/info-book-service/info-book-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/info-book-service (1)/info-book-service (1).iml" filepath="$PROJECT_DIR$/info-book-service (1)/info-book-service (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/store-service/store-service.iml" filepath="$PROJECT_DIR$/store-service/store-service.iml" />
     </modules>
   </component>
 </project>
