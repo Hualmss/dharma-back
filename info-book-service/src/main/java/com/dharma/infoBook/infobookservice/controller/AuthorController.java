@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/infoBook/author")
-@CrossOrigin
+@CrossOrigin("*")
 public class AuthorController {
 
     @Autowired
