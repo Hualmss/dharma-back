@@ -25,4 +25,8 @@ public class Book {
     @JsonFormat(pattern = "YYY-MM-dd")
     private Date readingStarDate;
     private float price;
+    @Override
+    public String toString(){
+        return "\tName: "+this.name.toUpperCase();
+    }
 }
