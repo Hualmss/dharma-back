@@ -23,7 +23,7 @@ spring:
           uri: lb://info-book-service
           predicates:
             - Path=/infoBook/author/**, /infoBook/genre/**, /infoBook/store/**
-      global-cors:
+      globalcors:
         cors-configurations:
           '[/**]':
             allowed-origins: "*"
