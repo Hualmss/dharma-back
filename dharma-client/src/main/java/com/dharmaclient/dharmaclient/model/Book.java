@@ -19,10 +19,10 @@ public class Book {
 
     private long genreId;
 
-    @JsonFormat(pattern = "YYY-MM-dd")
+    @JsonFormat(pattern = "dd-MM-YYYY")
     private Date purchaseDate;
 
-    @JsonFormat(pattern = "YYY-MM-dd")
+    @JsonFormat(pattern = "dd-MM-YYYY")
     private Date readingStarDate;
     private float price;
     @Override
